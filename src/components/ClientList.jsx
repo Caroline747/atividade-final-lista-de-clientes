@@ -9,8 +9,8 @@ export default function ClientList({ clients }) {
     <ul>
       {clients.map((client, index) => (
         <li key={index}>
-          <strong>{client.name}</strong> - {client.phone}
-          {client.note && <p>Obs: {client.note}</p>}
+          <strong>{client.name}</strong> <br /> Telefone {client.phone}
+          {client.note && <p>Observações: {client.note}</p>}
         </li>
       ))}
     </ul>
